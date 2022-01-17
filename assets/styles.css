@@ -1,0 +1,43 @@
+body{
+    background-image: url('logo.png');
+}
+.about{
+    float:right;
+    width:25%;
+    height:280px;
+}
+div.home{
+    float:right; 
+    height:280px;
+}
+div.input{
+    text-align: center;
+    width: 1500px;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+}
+.submit{
+    background-color: rgb(153, 52, 52);
+    color:whitesmoke;
+    font:bold15px arial,sans-serif;
+    text-shadow:none;
+    width: 100px;
+    height:30px; 
+    text-align: center;
+}
+.url{
+    text-align: center;
+    color:black;
+    height:30px;
+    width: 250px;
+}
+.logo{
+    
+    color:rgb(235, 20, 20)
+}
+div.result{
+    color:wheat;
+}

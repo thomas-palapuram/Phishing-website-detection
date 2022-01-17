@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+    <title>result</title>
+<link  rel="stylesheet" type="text/css" href ="{% static '/stylessite.css' %}">
+<div class="result">
+<h2>Details of site</h2>    
+{% for i in res %}
+{{i}}<br>
+{% endfor %}
+</div>
+<br><br>
+{% if flg %}
+{% if flag %}
+<div class=legitmate><h2><b>Result</b></h2><br>{{final_result}}
+<h2><b>Accuracy</b></h2><br><div class="pie" style="--p:40;--c:rgb(5, 139, 0);--b:10px">{{accuracy}}</div>
+</div>
+{% else %}
+<div class=phish><h2><b>Result</b></h2>{{final_result}}
+    <h2><b>Accuracy</b></h2><div class="phishpie" style="--p:40;--c:rgb(139, 0, 0);--b:10px"> {{accuracy}}</div>
+    </div>
+{% endif %}
+
+{% endif %}
+<br><br>
+<div class="submit">
+    <form action='/' method='post'>
+        {% csrf_token %}
+        <input type="submit" class="submit" value="BACK">
+    </form>
+</div>
+</html>

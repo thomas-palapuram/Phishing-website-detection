@@ -1,0 +1,19 @@
+
+{% load static %}
+<html>
+    <title>PhishPie</title>
+    <link  rel="stylesheet"href ="{% static '/stylessite.css' %}">
+        <div class="input">
+        <h2 class="logo1">Phish<h1 class="logo2">Pie</h1></h2>   
+        <form action='result' method='post'>
+            {% csrf_token %}
+            <input class="s_bar" type="text" name="URL" placeholder="ENTER URL OF SUSPECTED SITE" class="url" required><br><br>
+            {% for i in messages %}
+           <div class="result"> {{i}}</div><br>
+            {% endfor %}
+            <input type="submit" class="submit" value="VIEW RESULT">
+        </form>
+    </div>
+    </body>
+    
+</html>
