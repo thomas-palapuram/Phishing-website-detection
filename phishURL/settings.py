@@ -26,7 +26,7 @@ SECRET_KEY = '0r*lz6!u$4zbtwo1k!zs637fc2o5k1j6@tq48b5r^vgh6ml4cq'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','phishpie.herokuapp.com']
 
 
 # Application definition
