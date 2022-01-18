@@ -199,4 +199,6 @@ def result(request):
             return redirect('/')
         else:
             return render(request,"result.html",{"res":r,"final_result":final_result,"accuracy":ac,'flag':flag,'flg':flg})#sends r to result.html
+    return render(request,"result.html",{"res":r,"final_result":final_result,"accuracy":ac,'flag':flag,'flg':flg})#sends r to result.html 
+     
     #THOMAS ELDHO 20BCT0113
