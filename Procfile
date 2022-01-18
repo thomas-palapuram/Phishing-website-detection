@@ -1,1 +1,1 @@
-web: gunicorn phishpie.wsgi --log-file -
+web: gunicorn phishURL.wsgi --log-file -
